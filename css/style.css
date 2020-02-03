@@ -1,0 +1,413 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*---- navbar ---- */
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand img{
+  height: 120px;
+  padding-left:60px;
+}
+
+.navbar-nav li a {
+  float: left;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+.nav-link{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#nav-bar ul li a:hover {
+  color: #007bff!important;
+}
+
+nav-item active
+
+.navbar {
+  background: #fff;
+}
+
+.navbar-toggler{
+  border: none!important;
+}
+
+.nav-link {
+  color: #555!important;
+  font-weight: 600;
+  font-size:16px;
+}
+
+/*---- Slider ---- */
+
+#slider {
+  width: 100%;
+}
+.carousel-caption{
+  top:50%;
+  transform: translateY(-50%);
+  bottom: initial!important;
+}
+
+.carousel-caption h3{
+  color: #fff;
+  font-size: 130px;
+  font-style: italic;
+  font-family:Edwardian Script ITC;
+}
+
+.carousel-caption p{
+  color: #fff;
+  font-size: 70px;
+}
+
+/*---- About Us ---- */
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#about .btn {
+/*  margin-top: 50px;*/
+  margin: 50px 50px;
+}
+
+.about-content {
+  padding-top: 20px;
+}
+
+
+/*---- Our Services --- */
+
+#services{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/services.jpg);
+  background-size: cover;
+  background-position:center;
+  color: #efefef !important;
+  background-attachment: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#services h1{
+text-align: center;
+color: #efefef !important;
+padding-bottom: 10px;
+}
+
+/*.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding:20px;
+  height: 80px;
+  border:1px solid #fff;
+  border-radius: 50%;
+
+}
+*/
+
+.services .col-md-4:hover{
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/*------- Our team ------*/
+
+
+/*---- Image Gallery ------*/
+
+.gallery{
+  margin: 10px 50px;
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+/*----- Make Reservation -----*/
+#reservation {
+  background:#efefef;
+  padding-top:40px;
+  padding-bottom:40px;
+  color: #777;
+}
+
+.reservation-form {
+  padding: 15px;
+}
+
+.form-control{
+  border-radius: 0 !important;
+  border: 1px;
+  border: none !important;
+}
+
+::placeholder{
+  color: #999 !important;
+}
+/*----- Contact Details -----*/
+
+
+#Contact{
+  background-size: cover;
+  background-position:center;
+  color: #black !important;
+  background-attachment: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#Contact{
+  background: gray;
+  color: #fff;
+  padding: 12px
+}
+
+.contact-form {
+  border: 1px;
+}
+
+.follow{
+  background: #fff;
+  padding: 10px;
+  margin: 15px
+}
+
+/*----- Gallery -----*/
+#gallery {
+  background:  #f2f2f2;
+}
+
+
+/*----- Footer-------*/
+
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 12px
+
+}
+.bg-model{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.model-content{
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  opacity: 1;
+  border-radius: 4px;
+}
+
+Login
+
+#footer{
+  background:#333;
+  color: #fff;
+  padding : 12px;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+// clear all the things
+@mixin clearfix() {
+  &:after, &:before {
+    display: table;
+    content: " ";
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+  }
+}
+
+// a little scaffolding...
+.container {
+  @include clearfix;
+  width: 50%;
+  margin: 1em auto;
+  border: 1px solid #ddd;
+  padding: .3em .6em;
+  p {
+    font-size: .9em;
+    color: #777;
+    margin-bottom: 1.5em;
+    font-style: italic;
+  }
+}
+
+.group-header {
+  float: right;
+  font-weight: 700;
+  width: 20%;
+  margin: .7em 0 1em 0;
+  span {
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: block;
+  }
+}
+
+h3 {
+  @include clearfix;
+  position: relative;
+  font-weight: 700;
+  margin: .7em 0 1em 0;
+  span {
+    float: left;
+    width: 10%;
+    text-align: center;
+    display: block;
+    &:first-child {
+      width: 40%;
+      text-align: left;
+    }
+  }
+  .dots {
+    width: 40%;
+    border-bottom: 2px dotted #ccc;
+    margin-top: .8em;
+  }
+}
+
+/*------ team Section -----*/
+
+.profile-pic{
+  margin-top: 25px;
+}
+
+.profile-pic .img-box{
+  opacity: 1;
+  display: inline;
+  position:relative;
+}
+
+.profile-pic .img-box img{
+  filter:grayscale(1);
+}
+.profile-pic .img-box img:hover{
+  filter:grayscale(0);
+  cursor:pointer;
+}
+
+.profile-pic h2{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #007bff !important;
+}
+
+.profile-pic h3{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+
+}
+
+#team{
+  height:50px;
+  width:50px;
+  color: #007bff !important;
+  background: #fff;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+  color:#555 !important;
+  padding-bottom: 10px;
+}
+
+h1::after {
+  content:'';
+  background:#007bff;
+  display: inline;
+  height: 3px;
+  width: 170px;
+  margin:20px auto 5px;
+}
+
+
+.img-box ul {
+  padding: 15px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+
+  opacity: 0;
+}
+
+
+.img-box ul li{
+  padding: 5px;
+
+}
+
+.img-box:hover ul {
+  opacity: 1;
+}
+
+
+#teamnew {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#teamnew h3 {
+  text-align: center;
+  color: #555 !importan;
+  padding-bottom: 10px;
+  align-content: center;
+}
+
+#teamnew h3::after
+{
+  content: '';
+  background: #007bff;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 5px auto 5px;
+}
+
+#teamnew figcaption {
+  text-align: center;
+}
